@@ -1,0 +1,17 @@
+Volumetric water and voxel-based elements for player manipulation.
+
+2D 
+
+Earth-bending
+----------------
+Launching player upward by creating earth beneath you. 
+
+Destroy objects by dropping earth on top of them. 
+
+Launching rocks at people will do variable damage based on force. 
+
+Downward force will launch you up.  
+
+
+
+Earth disks that they shoot out from walls that they built.
