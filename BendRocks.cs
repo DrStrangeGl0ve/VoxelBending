@@ -10,7 +10,7 @@ public class BendRocks : MonoBehaviour
     public GameObject squarePrefab;
 
 void Update () {
-    if (Input.GetMouseButton(1)) // Check if right mouse button is clicked
+    /*if (Input.GetMouseButton(1)) // Check if right mouse button is clicked
     {
         // Calculate the size of each square
         float squareSize = transform.localScale.x / subdivisions;
@@ -38,7 +38,7 @@ void Update () {
         }
 
         Destroy(gameObject);
-    }
+    }*/
 }
 void OnMouseDown()
     
@@ -52,15 +52,15 @@ void OnMouseDown()
             for (int j = 0; j < subdivisions; j++)
             {
                 // Calculate the position of the current square
-                Vector3 position = transform.position + new Vector3(i * squareSize, j * squareSize, 0);
+                //Vector3.position = transform.position;
 
                 // Create a new square object
-                GameObject newSquare = Instantiate(squarePrefab, position, Quaternion.identity);
+                GameObject newSquare = Instantiate(squarePrefab, transform.position, Quaternion.identity);
                 //newSquare.AddComponent<Rigidbody2D>();
                 //newSquare.AddComponent<BoxCollider2D>();
 
                 // Adjust the scale of the new square
-                newSquare.transform.localPosition= new Vector3(i * squareSize, j * squareSize, 0);
+                newSquare.transform.localPosition = tranform.position * new Vector3(i * squareSize, j * squareSize, 0);
                 newSquare.transform.localScale = new Vector3(squareSize, squareSize, 1f);
 
         }
