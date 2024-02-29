@@ -14,4 +14,6 @@ Downward force will launch you up.
 
 
 
+
 Earth disks that they shoot out from walls that they built.
+Drag mouse up to create spikes.
